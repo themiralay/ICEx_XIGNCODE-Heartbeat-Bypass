@@ -1,7 +1,4 @@
 # XignCode3 bypass
-A host-based emulator bypass for Wellbia's XignCode3.
+*It is an old XIGNCODE HeartBeat Bypass project. WellBia XIGNCODE Firewall protection sends A0 Packet at certain time intervals.
 
-Emulates the integrity-check for XignCode3 through a host-application.
-
-* A host application launches/initializes XignCode3, causing XignCode3 to run its anti-hack analysis in that particular process-space, resulting in hack-attempts on the original application to remain undetected.
-* A client application hijacks the XignCode3 files (and exports), forwarding all integry-check requests to the host-application (through a local socket) to generate verification-responses.
+*This Code creates a host that emulates the packet sent by XIGNCODE. The client listens for this packet. You can use a Hyper-V or any VDS for the host.
